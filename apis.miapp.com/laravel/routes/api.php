@@ -15,5 +15,12 @@ use App\Http\Controllers\v1\ProductosController;
 */
 
 Route::get('/v1/productos',[ProductosController::class,'getAll']);
+Route::get('/v1/productos/{id}',[ProductosController::class,'getItem']);
+Route::post('/v1/productos',[ProductosController::class,'store']);
+
+Route::put('/v1/productos',[ProductosController::class,'putUpdate']);
+
+Route::patch('/v1/productos',[ProductosController::class,'getAll']);
+Route::delete('/v1/productos/{id}',[ProductosController::class,'getAll']);
  
  
